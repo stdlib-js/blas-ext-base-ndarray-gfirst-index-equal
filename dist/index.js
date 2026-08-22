@@ -1,28 +1,5 @@
+"use strict";var l=function(a,r){return function(){try{return r||a((r={exports:{}}).exports,r),r.exports}catch(e){throw (r=0, e)}};};var c=l(function(E,o){
+var g=require('@stdlib/ndarray-base-ndarraylike2scalar/dist'),m=require('@stdlib/ndarray-base-numel-dimension/dist'),q=require('@stdlib/ndarray-base-stride/dist'),x=require('@stdlib/ndarray-base-offset/dist'),f=require('@stdlib/ndarray-base-data-buffer/dist'),p=require('@stdlib/ndarray-base-clip-index/dist'),y=require('@stdlib/blas-ext-base-gfirst-index-equal/dist').ndarray;function I(a){var r,e,u,n,s,d,i,t,v;return t=a[0],v=a[1],r=g(a[2]),i=m(t,0),r=p(r,i),r>=i?-1:(i-=r,u=q(t,0),s=x(t)+u*r,n=q(v,0),d=x(v)+n*r,e=y(i,f(t),u,s,f(v),n,d),e>=0&&(e+=r),e)}o.exports=I
+});var D=c();module.exports=D;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Return the index of the first element in a one-dimensional ndarray equal to a corresponding element in another one-dimensional ndarray.
-*
-* @module @stdlib/blas-ext-base-ndarray-gfirst-index-equal
-*
-* @example
-* var vector = require( '@stdlib/ndarray-vector-ctor' );
-* var gfirstIndexEqual = require( '@stdlib/blas-ext-base-ndarray-gfirst-index-equal' );
-*
-* var x = vector( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
-* var y = vector( [ 0.0, 0.0, 3.0, 0.0 ], 'generic' );
-*
-* var idx = gfirstIndexEqual( [ x, y ] );
-* // returns 2
-*/
-
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
